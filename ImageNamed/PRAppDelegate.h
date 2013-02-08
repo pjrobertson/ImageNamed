@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PRAppDelegate : NSObject <NSApplicationDelegate>
+@interface PRAppDelegate : NSObject <NSApplicationDelegate> {
+    IBOutlet NSPopUpButton *imageSelector;
+    IBOutlet NSImageView *imageView;
+    IBOutlet NSTextView *descriptionTextField;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
+-(IBAction)showImage:(NSPopUpButton *)sender;
 
 @end
