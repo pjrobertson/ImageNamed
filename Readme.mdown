@@ -16,6 +16,8 @@ ImageNamed is a simple app for Mac OS X 10.6+ that gives previews of the 'standa
 
 Not all image representations will be shown in the 'description' portion of the ImageNamed app. Using an `NSImageView` set to proportionally scale the image up or down shows that more representations seem to exist than those advertised in the image description.
 
+To build the app, Xcode 4 is required since the new `@[...]` syntax is used for creating arrays. Just change this if you want to build it on earlier systems.
+
 #### License
 
 ImageNamed is distributed under the GPL v3.0 license 'as is'. See [license.txt](license.txt) for more information
